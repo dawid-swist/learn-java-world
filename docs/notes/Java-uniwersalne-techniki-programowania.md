@@ -2,7 +2,7 @@
 
 ## Rozdział 7 Lambda. 
 
-[Link do przykładów](../../src/main/java/swistdaw/learn/java/world/Java8UniwersalneTechniki/Ch7Lambda.java)
+[Link do przykładów](../../src/test/java/swistdaw/learn/java/world/Java8UniwersalneTechniki/Ch7LambdaTest.java)
 
 - Można zastosować następujące domyślne Functional interfaces. [Link](https://docs.oracle.com/javase/8/docs/api/?java/util/function/package-summary.html)
 - Niektóre z nich można je komponować. Przykłady
