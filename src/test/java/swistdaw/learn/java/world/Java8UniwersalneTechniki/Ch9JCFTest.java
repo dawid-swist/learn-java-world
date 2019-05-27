@@ -52,8 +52,8 @@ public class Ch9JCFTest {
 
         @Override
         public int compare(Person p1, Person p2) {
-            return new StringBuffer(p1.lname).append(p1.fname).toString()
-                    .compareTo(new StringBuffer(p2.lname).append(p2.fname).toString());
+            return (p1.lname + p1.fname)
+                    .compareTo(p2.lname + p2.fname);
         }
     }
 
