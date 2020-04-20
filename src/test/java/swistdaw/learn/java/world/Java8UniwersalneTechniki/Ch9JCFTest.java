@@ -1,6 +1,5 @@
 package swistdaw.learn.java.world.Java8UniwersalneTechniki;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Comparator;
@@ -12,6 +11,24 @@ import static org.junit.Assert.assertEquals;
 
 public class Ch9JCFTest {
 
+
+    @Test
+    public void shouldSortPersonalDateInTreeSet() {
+
+        SortedSet<Person> personList = new TreeSet<Person>(new PersonComparator());
+
+        personList.add(new Person("CCC", "AAAA"));
+        personList.add(new Person("BBB", "BBBB"));
+        personList.add(new Person("AAA", "AAAA"));
+        personList.add(new Person("BBB", "AAAA"));
+        personList.add(new Person("AAA", "BBBB"));
+        personList.add(new Person("CCC", "BBBB"));
+
+
+        assertEquals(new Person("AAA", "AAAA"), personList.first());
+        assertEquals(new Person("CCC", "BBBB"), personList.last());
+
+    }
 
     class Person {
 
@@ -55,24 +72,6 @@ public class Ch9JCFTest {
             return (p1.lname + p1.fname)
                     .compareTo(p2.lname + p2.fname);
         }
-    }
-
-    @Test
-    public void shouldSortPersonalDateInTreeSet() {
-
-        SortedSet<Person> personList = new TreeSet<Person>(new PersonComparator());
-
-        personList.add(new Person("CCC","AAAA"));
-        personList.add(new Person("BBB","BBBB"));
-        personList.add(new Person("AAA","AAAA"));
-        personList.add(new Person("BBB","AAAA"));
-        personList.add(new Person("AAA","BBBB"));
-        personList.add(new Person("CCC","BBBB"));
-
-
-        assertEquals(new Person("AAA","AAAA"), personList.first());
-        assertEquals(new Person("CCC","BBBB"), personList.last());
-
     }
 
 

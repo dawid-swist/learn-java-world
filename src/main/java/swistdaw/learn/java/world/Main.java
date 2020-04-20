@@ -4,7 +4,7 @@
 package swistdaw.learn.java.world;
 
 public class Main {
-    public static void main(String ... args) {
+    public static void main(String... args) {
         return;
     }
 }

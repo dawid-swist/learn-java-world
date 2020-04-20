@@ -79,13 +79,13 @@ public class Ch8SimpleToolTest {
     }
 
     @Test
-    public void shouldMeasureDataDuration(){
+    public void shouldMeasureDataDuration() {
 
         LocalDate initialDate = LocalDate.parse("2007-05-10");
         LocalDate finalDate = initialDate.plus(Period.ofDays(10));
 
-        Period period = Period.between(initialDate,finalDate);
+        Period period = Period.between(initialDate, finalDate);
 
-        assertEquals(10 ,period.getDays());
+        assertEquals(10, period.getDays());
     }
 }
